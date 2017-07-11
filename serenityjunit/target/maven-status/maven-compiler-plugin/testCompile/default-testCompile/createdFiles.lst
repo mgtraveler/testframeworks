@@ -1,0 +1,6 @@
+com\serenity\junit\features\search\SearchByKeywordStory.class
+com\serenity\junit\ui\GoogleSearchPage.class
+com\serenity\junit\tasks\Search.class
+com\serenity\junit\features\search\package-info.class
+com\serenity\junit\tasks\OpenTheApplication.class
+com\serenity\junit\ui\SearchBox.class

@@ -1,0 +1,55 @@
+-------------------------------------------------------------------------------
+Test set: com.serenity.junit.features.search.SearchByKeywordStory
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 90.32 sec <<< FAILURE! - in com.serenity.junit.features.search.SearchByKeywordStory
+search_results_should_show_the_search_term_in_the_title(com.serenity.junit.features.search.SearchByKeywordStory)  Time elapsed: 78.243 sec  <<< ERROR!
+net.thucydides.core.webdriver.UnsupportedDriverException: Could not instantiate new webdriver instance of type class org.openqa.selenium.firefox.FirefoxDriver (Failed to connect to binary FirefoxBinary(C:\Program Files (x86)\Mozilla Firefox\firefox.exe) on port 7055; process output follows: 
+le":true,"active":true,"userDisabled":false,"appDisabled":false,"descriptor":"C:\\Program Files (x86)\\Mozilla Firefox\\browser\\extensions\\{972ce4c6-7e08-4474-a285-3208198ce6fd}.xpi","installDate":1496861270707,"updateDate":1496861270707,"applyBackgroundUpdates":1,"skinnable":true,"size":19587,"sourceURI":null,"releaseNotesURI":null,"softDisabled":false,"foreignInstall":false,"hasBinaryComponents":false,"strictCompatibility":true,"locales":[],"targetApplications":[{"id":"{ec8030f7-c20a-464f-9b0e-13a3a9e97384}","minVersion":"52.1.2","maxVersion":"52.1.2"}],"targetPlatforms":[],"seen":true,"dependencies":[],"hasEmbeddedWebExtension":false}
+1499623958088	addons.xpi	DEBUG	getModTime: Recursive scan of {972ce4c6-7e08-4474-a285-3208198ce6fd}
+1499623958092	DeferredSave.extensions.json	DEBUG	Save changes
+1499623958092	addons.xpi	DEBUG	Updating database with changes to installed add-ons
+1499623958093	addons.xpi-utils	DEBUG	Updating add-on states
+1499623958096	addons.xpi-utils	DEBUG	Writing add-ons list
+1499623958393	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\aushelper@mozilla.org.xpi
+1499623958396	addons.xpi	DEBUG	Calling bootstrap method startup on aushelper@mozilla.org version 2.0
+1499623958404	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\e10srollout@mozilla.org.xpi
+1499623958407	addons.xpi	DEBUG	Calling bootstrap method startup on e10srollout@mozilla.org version 1.9
+1499623958473	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\firefox@getpocket.com.xpi
+1499623958476	addons.xpi	DEBUG	Calling bootstrap method startup on firefox@getpocket.com version 1.0.5
+1499623958482	addons.xpi	DEBUG	Registering manifest for C:\Program Files (x86)\Mozilla Firefox\browser\features\webcompat@mozilla.org.xpi
+1499623958485	addons.xpi	DEBUG	Calling bootstrap method startup on webcompat@mozilla.org version 1.0
+1499623958501	addons.manager	DEBUG	Registering shutdown blocker for XPIProvider
+1499623958505	addons.manager	DEBUG	Provider finished startup: XPIProvider
+1499623958508	addons.manager	DEBUG	Starting provider: LightweightThemeManager
+1499623958511	addons.manager	DEBUG	Registering shutdown blocker for LightweightThemeManager
+1499623958511	addons.manager	DEBUG	Provider finished startup: LightweightThemeManager
+1499623958514	addons.manager	DEBUG	Starting provider: GMPProvider
+1499623958622	addons.manager	DEBUG	Registering shutdown blocker for GMPProvider
+1499623958623	addons.manager	DEBUG	Provider finished startup: GMPProvider
+1499623958624	addons.manager	DEBUG	Starting provider: PluginProvider
+1499623958626	addons.manager	DEBUG	Registering shutdown blocker for PluginProvider
+1499623958627	addons.manager	DEBUG	Provider finished startup: PluginProvider
+1499623958630	addons.manager	DEBUG	Completed startup sequence
+1499623966661	addons.manager	DEBUG	Starting provider: <unnamed-provider>
+1499623966662	addons.manager	DEBUG	Registering shutdown blocker for <unnamed-provider>
+1499623966664	addons.manager	DEBUG	Provider finished startup: <unnamed-provider>
+1499623974031	DeferredSave.extensions.json	DEBUG	Write succeeded
+1499623974032	addons.xpi-utils	DEBUG	XPI Database saved, setting schema version preference to 19
+1499623974034	DeferredSave.extensions.json	DEBUG	Starting timer
+1499623974072	DeferredSave.extensions.json	DEBUG	Starting write
+1499623975204	addons.repository	DEBUG	No addons.json found.
+1499623975207	DeferredSave.addons.json	DEBUG	Save changes
+1499623975224	DeferredSave.addons.json	DEBUG	Starting timer
+1499623975454	addons.manager	DEBUG	Starting provider: PreviousExperimentProvider
+1499623975454	addons.manager	DEBUG	Registering shutdown blocker for PreviousExperimentProvider
+1499623975456	addons.manager	DEBUG	Provider finished startup: PreviousExperimentProvider
+1499623976055	DeferredSave.addons.json	DEBUG	Starting write
+1499623980012	DeferredSave.extensions.json	DEBUG	Write succeeded
+1499623980099	DeferredSave.addons.json	DEBUG	Write succeeded
+
+Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
+System info: host: 'DESKTOP-O6568G8', ip: '192.168.1.176', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_111'
+Driver info: driver.version: FirefoxDriver
+	at com.serenity.junit.tasks.OpenTheApplication.performAs(OpenTheApplication.java:15)
+	at com.serenity.junit.features.search.SearchByKeywordStory.search_results_should_show_the_search_term_in_the_title(SearchByKeywordStory.java:41)
+
