@@ -1,4 +1,4 @@
-package com.zlotko.entities;
+package com.zlotko.webdriver;
 
 import lombok.RequiredArgsConstructor;
 import java.util.Map;

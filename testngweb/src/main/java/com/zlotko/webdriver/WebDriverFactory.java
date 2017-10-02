@@ -1,4 +1,4 @@
-package com.zlotko.entities;
+package com.zlotko.webdriver;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;

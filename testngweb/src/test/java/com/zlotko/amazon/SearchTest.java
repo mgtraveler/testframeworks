@@ -1,8 +1,7 @@
 package com.zlotko.amazon;
 
 import com.zlotko.core.BaseTest;
-import com.zlotko.pages.amazon.HomePage;
-import org.openqa.selenium.By;
+import com.zlotko.steps.SearchSteps;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
@@ -11,15 +10,16 @@ import org.testng.annotations.Test;
  */
 public class SearchTest extends BaseTest {
 
+    private SearchSteps searchSteps = new SearchSteps();
+
     @DataProvider(name = "test1")
     public static Object[] primeNumbers() {
-        return new Object[] {"Alex", "Maria"};
+        return new Object[] {"Alex", "Maryna"};
     }
 
     @Test(dataProvider = "test1")
     public void testCanSearch(final String searchTerm) {
-        HomePage.get().open().
-                getSearchWidget().
-                searchFor(searchTerm);
+        searchSteps.onHomePage();
+        searchSteps.searchFor(searchTerm);
     }
 }

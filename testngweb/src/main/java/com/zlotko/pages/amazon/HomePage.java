@@ -1,22 +1,24 @@
 package com.zlotko.pages.amazon;
 
-import com.zlotko.core.BasePage;
+import com.zlotko.pages.AbstractPage;
 import com.zlotko.pages.widgets.amazon.SearchWidget;
 import com.zlotko.props.PropUtils;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
 
+import static com.zlotko.core.BaseTest.getDriver;
+
 /**
  * Created by Maryna on 02.09.2017.
  */
-public class HomePage extends BasePage {
+public class HomePage extends AbstractPage {
 
     private static HomePage homePage;
     private SearchWidget searchWidget;
 
     public HomePage() {
-        super();
+        PageFactory.initElements(getDriver(), this);
         this.searchWidget = new SearchWidget();
     }
 
@@ -29,18 +31,5 @@ public class HomePage extends BasePage {
 
     public SearchWidget getSearchWidget() {
         return searchWidget;
-    }
-
-    public HomePage open() {
-        navigateTo(PropUtils.getStringValue("baseUrl"));
-        return this;
-    }
-
-    public WebElement getSearchInput() {
-        return findElement(By.id("twotabsearchtextbox"));
-    }
-
-    public WebElement getSearchButton() {
-        return findElement(By.cssSelector("div[class*='search-submit']"));
     }
 }
