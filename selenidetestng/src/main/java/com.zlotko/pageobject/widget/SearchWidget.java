@@ -1,8 +1,10 @@
 package com.zlotko.pageobject.widget;
 
+import com.codeborne.selenide.Condition;
 import com.codeborne.selenide.SelenideElement;
 
 public class SearchWidget {
+
     private SelenideElement rootElement;
 
     public SearchWidget(final SelenideElement rootElement) {
@@ -19,5 +21,13 @@ public class SearchWidget {
 
     public SelenideElement getSearchTextBox() {
         return rootElement.$x(".//*[@id='twotabsearchtextbox']");
+    }
+
+    public SelenideElement getCategoryDropdown() {
+        return rootElement.$("[id='searchDropdownBox']");
+    }
+
+    public SelenideElement getSelectedCategoryOption() {
+        return getCategoryDropdown().$$("option").filterBy(Condition.attribute("selected")).first();
     }
 }

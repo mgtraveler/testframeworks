@@ -1,8 +1,0 @@
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
-<suite name="Parallel Test Suite" parallel="tests" thread-count="5">
-    <test name="Search tests" preserve-order="true">
-        <classes>
-            <class name="com.zlotko.search.TestSelenium"/>
-        </classes>
-    </test>
-</suite>

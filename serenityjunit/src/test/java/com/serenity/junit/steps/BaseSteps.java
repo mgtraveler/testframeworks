@@ -11,6 +11,5 @@ public class BaseSteps extends ScenarioSteps {
     @Step("Open the application")
     public void openHomePage() {
         homePage.open();
-//        Open.browserOn().the(homePage);
     }
 }

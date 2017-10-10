@@ -10,9 +10,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.openqa.selenium.WebDriver;
 
-import static com.serenity.junit.assertions.PollingAssertion.assertPolling;
-import static org.assertj.core.api.Assertions.assertThat;
-
 @RunWith(SerenityRunner.class)
 public class AmazonSearch extends Configuration{
 
@@ -27,11 +24,7 @@ public class AmazonSearch extends Configuration{
 
     @Test
     public void testCanSearch() {
-//        baseSteps.openHomePage();
-//        searchSteps.searchForTerm("kindle");
-
-        assertPolling(() -> {
-            assertThat(1+1).as("Bad assert").isEqualTo(5);
-        });
+        baseSteps.openHomePage();
+        searchSteps.searchForTerm("kindle");
     }
 }

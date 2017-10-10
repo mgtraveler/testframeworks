@@ -17,4 +17,7 @@ public interface BaseConfig extends Config {
 
     @Key("baseUrl")
     String baseUrl();
+
+    @Key("binary.path")
+    String binaryPath();
 }
